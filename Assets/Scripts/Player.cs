@@ -45,4 +45,5 @@ public class Player : MonoBehaviour
         transform.forward = input;
         }
     }
+    
 }
