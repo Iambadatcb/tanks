@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -12,6 +13,11 @@ public class Player : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
     public float fireRate = 0.5f;
+
+    [Header("Death")]
+    private Health health;
+    private Start scene;
+
 
     void Start()
     {
@@ -44,6 +50,7 @@ public class Player : MonoBehaviour
 
         transform.forward = input;
         }
+        
     }
-    
+
 }
